@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 93%;
+    margin: 0 auto;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.5em;
+}
+
+nav {
+    padding: 2em 0 2em 1.5rem;
+}
+
+.logo {
+    width: 13em;
+}
+
+.hero {
+    display: flex;
+    gap: 3em;
+    padding: 0 2em;
+}
+
+.left-section {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.right-section {
+    width: 50%;
+    padding-top: 4em;
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding-top: 10px;
+    line-height: 1.4rem;
+}
+
+.right-section a {
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.8em 3.7em;
+    background: #fff;
+    border: 2px;
+    border-radius: 2em;
+    margin-top: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.right-section a:hover {
+    background-color: hsl(300, 69%, 71%);
+    letter-spacing: 5px;
+}
+
+.social {
+    position: absolute;
+    z-index: 10;
+    right: 4em;
+    bottom: 0.5em;
+    display: flex;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social i {
+    color: white;
+    vertical-align: top;
+    width: 14x;
+    height: 14px;
+}
+
+.social li a {
+    max-height: 28px;
+    margin-left: 1em;
+    display: inline-block;
+    border-radius: 50%; 
+    display: inline-block;
+    border: 1px solid white;
+    padding: 6px;
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(1) translatex(-15px);
+    background-color: violet;
+}
+
+
+
+
+
+
+
+/**************************************************************** MOBILE DESIGN *****************************************************************/
+
+
+@media screen and (max-width: 900px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    nav {
+        padding-top: 2em;
+        padding-left: 2em;
+    }
+
+    section.hero {
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 0;
+    }
+
+    .left-section {
+        align-items: center;
+        flex-basis: 100%;
+        margin-top: 1em;
+    }
+
+    .right-section {
+        flex-basis: 100%;
+        padding-bottom: 5em;
+    }
+
+    p{
+        padding-top: 1em;
+        font-size: 20px;
+        line-height: 2em;
+    }
+
+   .right-section a{
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-left: 7em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        background-image: url(..images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+    }
+
+    .logo{
+        width: 10em;
+    }
+    section.hero{
+        text-align: center;
+    }
+
+    .left-section{
+        padding-top: 0;
+    }
+
+    .right-section{
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    h1{
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+
+    .social{
+        padding-top: 2em;
+    }
+
+}
